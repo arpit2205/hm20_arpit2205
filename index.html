@@ -1,0 +1,112 @@
+<html>
+
+
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <meta charset="utf-8">
+  <title>Get Current Position</title>
+
+
+  <script>
+
+    var latd;
+    var longd;
+    var contact = "";
+
+    //Function to get location
+    function showPosition() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          latd = position.coords.latitude;
+          longd = position.coords.longitude;
+          // var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+          // document.getElementById("result").innerHTML = positionInfo;
+          alert('Your current position - \nLatitude : ' + latd + ', Longitude : ' + longd)
+        });
+      } else {
+        alert("Sorry, your browser does not support HTML5 geolocation.");
+      }
+    }
+
+
+    //Function to send message
+    function sendText() {
+
+      //contact = document.getElementById('inputno').value;
+      text = "sms:" + contact + "?body=This is an SOS Alert! The sender is in trouble, reach them - http://www.google.com/maps/place/" + latd + "," + longd;
+      window.location.href = text;
+    }
+
+  </script>
+</head>
+
+
+<body>
+
+  <!--Division for header-->
+  <div class="header">
+    <h4>Sister</h4>
+  </div>
+  <!-------------------------------------------------->
+
+
+  <!-- <div id="result">
+    <!--Position information will be inserted here-->
+  <!--</div> -->
+
+  
+  
+  <p id="intro">In trouble?<br></br> Share your location with your family so that they can reach you.</p>
+
+  <p id="access">1. Allow location access</p>
+
+  
+  <button id="showpos" type="button" onclick="showPosition();">Allow</button>
+ 
+  
+  <br></br>
+  
+  <br></br>
+
+
+
+  <p id="contactno">2. Click send to select contacts and share location.</p>  
+  
+  
+  <!-- <form>
+    <input id="inputno" pattern="[789][0-9]{9}" type="number" id="contact" placeholder="Tap Here">
+  </form> -->
+
+  <br></br>
+  <button id="sendtext" type="button" onclick="sendText();">Send Location</button>
+  <br></br>
+
+  
+  <div class="image">
+    <img id="girl" src="girl.png"/>
+    <p>"My safety is my priority."</p>
+  </div>
+
+
+
+  <div class="info">
+    <p id="tipsTitle">Safety Tips</p>
+    <br></br>
+
+    <a id="tip1" href="https://timesofindia.indiatimes.com/blogs/the-next-step/safety-tips-for-women/">Safety tips for women (TOI)</a>
+    <br></br>
+    <a id="tip2" href="https://indianhelpline.com/WOMEN-HELPLINE/">Emergency Helpline Numbers</a>
+  
+  </div>
+  
+
+
+
+
+
+
+</body>
+
+</html>
