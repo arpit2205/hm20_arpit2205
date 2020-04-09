@@ -14,7 +14,7 @@ My idea is to build a simple, minimalistic, and easy to use web application usin
 In case of an emergency, what all they have to do is : 1. Open the web application. 2. Give location access (automatically asked on the button click). 3. Click "Send Location" button. 4. Select a contact (or multiple) and send.
 
 ### FEATURES / WORKING
-On the homepage (and the only page) of my web application, there would be a greeting message and a button to allow location access. Once the user allows the location access, the user is automatically prompted by a message showing his/her current location in terms of latitude and longitude.
+On the homepage (the only page) of my web application, there would be a greeting message and a button to allow location access. Once the user allows the location access, the user is automatically prompted by a message showing his/her current location in terms of latitude and longitude.
 
 Below this button will be a button to send the location to a contact. Once it is clicked, it automatically redirects to the messaging application with a personalised message containing a request for help and a google maps link of the location of the user. Preview of the message : "This is an SOS Alert! The sender is in trouble, reach them - http://www.google.com/maps/place/{latitude},{longitude}".
 
