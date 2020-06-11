@@ -1,244 +1,167 @@
-*{
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Bellota', cursive;
 }
 
-.header{
-    width: 100%;
-    height: 300px;
-    color: pink;
-    font-family: monospace;
-    text-align: center;
-    line-height: 250px;
-    font-size: 150px;
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.header {
+    width: 100vw;
+    height: 100px;
+    color: #222;
+    margin: 0;
+    padding: 0;
+
     
 }
 
-#intro{
-    margin-top: 7%;
-    margin-left: 16%;
-    margin-right: 15%;
-    font-size: 55px;
-    color: gray;
-    font-family: monospace;
-}
 
-#access{
-    margin-top: 10%;
-    margin-left: 16%;
-    margin-right: 15%;
-    font-size: 45px;
-    color: darkgray;
-    font-family: monospace;
-}
-
-#showpos{
-    margin-top: 2%;
-    margin-left: 16%;
-    font-size: 40px;
-    height: 80px;
-    width: 320px;
-    background-color: black;
-    color: white;
-    font-family: monospace;
-}
-
-#contactno{
-    font-size: 55px;
-    margin-left: 16%;
-    margin-top: 6%;
-    margin-right: 16%;
-    font-family: monospace;
-    
-}
-
-#inputno{
-    margin-left: 16%;
-    margin-top: 4%;
-    font-size: 55px;
-    display: none;
-}
-
-#sendtext{
-    margin-top: 2%;
-    margin-left: 16%;
-    font-size: 50px;
-    background-color: pink;
-    color: white;
-    font-family: monospace;
-    height: 120px;
-    width: 600px; 
-    margin-bottom: 20%;
-}
-
-#girl{
-    margin-left: 3%;
-}
-
-.image{
-    display: flex;
+#header-text {
+    top: 50%;
+    transform: translate(0, 50%);
+    font-weight: 700;
+    font-size: 48px;
     align-items: center;
     justify-content: center;
-    font-family: monospace;
-    font-size: 70px;
-    color: gray;
-    margin-bottom: 10%;
+
+    
 }
 
-.info{
-    background-color: rgb(250, 250, 250);
-    width: 100%;
-    height: 600px;
-    margin-top: 18%;
+.allow-block {
+    background: linear-gradient(136.11deg, #35D057 -6.16%, rgba(112, 255, 0, 0.65) 116.5%);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    color: white;
+    height: 400px;
+    flex-direction: column;
+    position: relative;
+    transition: all .4s;
 }
 
-#tipsTitle{
-    color: black;
-    font-family: monospace;
-    margin-left: 16%;
-    margin-right: 16%;
-    padding-top: 140px;
-    font-size: 70px;
+.send-block {
+    background: linear-gradient(135.47deg, #FF0000 -4.74%, rgba(255, 168, 0, 0.65) 110.72%, rgba(255, 168, 0, 0.65) 110.73%);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    color: white;
+    height: 400px;
+    flex-direction: column;
+    position: relative;
+    transition: all .4s;
+
 }
 
-#tip1{
-    font-family: monospace;
+#allow-text {
     font-size: 40px;
-    color: gray;
-    margin-left: 16%;
+    position: absolute;
+    top: 40px;
+    width: 80%;
 }
 
-#tip2{
-    font-family: monospace;
+#allow-btn {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    background-color: white;
+    color: rgb(60, 60, 60);
+    border-radius: 10px;
+    height: 64px;
+    width: 160px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all .4s;
+}
+
+#send-text {
     font-size: 40px;
-    color: gray;
-    margin-left: 16%;
+    position: absolute;
+    top: 40px;
+    width: 80%;
 }
 
+#send-btn {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
 
-
-/*For laptops*/
-
-@media only screen and (min-width: 1300px) {
-
-    *{
-        border: 0px;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    .header{
-        width: 100%;
-        height: 150px;
-        color: pink;
-        font-family: monospace;
-        text-align: center;
-        line-height: 150px;
-        font-size: 80px;
-        
-    }
-    
-    #intro{
-        margin-top: 5%;
-        margin-left: 16%;
-        margin-right: 15%;
-        font-size: 40px;
-        color: gray;
-        font-family: monospace;
-    }
-    
-    #access{
-        margin-top: 4%;
-        margin-left: 16%;
-        margin-right: 15%;
-        font-size: 30px;
-        color: darkgray;
-        font-family: monospace;
-    }
-    
-    #showpos{
-        margin-top: 2%;
-        margin-left: 16%;
-        font-size: 30px;
-        height: 50px;
-        width: 200px;
-        background-color: black;
-        color: white;
-        font-family: monospace;
-    }
-    
-    #contactno{
-        font-size: 40px;
-        margin-left: 16%;
-        margin-top: 2%;
-        margin-right: 16%;
-        font-family: monospace;
-        
-    }
-    
-    #inputno{
-        margin-left: 16%;
-        margin-top: 4%;
-        font-size: 55px;
-        display: none;
-    }
-    
-    #sendtext{
-        margin-top: 0.5%;
-        margin-left: 16%;
-        font-size: 30px;
-        background-color: pink;
-        color: white;
-        font-family: monospace;
-        height: 60px;
-        width: 300px; 
-        margin-bottom: 8%;
-    }
-    
-    #girl{
-        margin-left: 3%;
-    }
-    
-    .image{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: monospace;
-        font-size: 60px;
-        color: gray;
-        margin-bottom: 5%;
-    }
-    
-    .info{
-        margin-top: 0%;
-        background-color: rgb(250, 250, 250);
-        width: 100%;
-        height: 300px;
-    }
-    
-    #tipsTitle{
-        color: black;
-        font-family: monospace;
-        margin-left: 16%;
-        margin-right: 16%;
-        padding-top: 60px;
-        font-size: 40px;
-    }
-    
-    #tip1{
-        font-family: monospace;
-        font-size: 30px;
-        color: gray;
-        margin-left: 16%;
-    }
-    
-    #tip2{
-        font-family: monospace;
-        font-size: 30px;
-        color: gray;
-        margin-left: 16%;
-    }
-
+    background-color: white;
+    color: rgb(61, 61, 61);
+    border-radius: 10px;
+    height: 64px;
+    width: 240px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all .4s;
 }
 
+#allow-btn:hover {
+    background-color: #222;
+    color: white;
+}
+
+#send-btn:hover {
+    background-color: #222;
+    color: white;
+}
+
+.allow-block:hover {
+    transform: scale(0.96);
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.1);
+}
+
+.send-block:hover {
+    transform: scale(0.96);
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.1);
+}
+
+.safety-block {
+    position: relative;
+}
+
+#safety-text {
+    position: absolute;
+    font-size: 80px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: all .6s;
+    opacity: .8;
+}
+
+#safety-text:hover {
+    color: rgb(247, 80, 107);
+    opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    #allow-text {
+        font-size: 32px;
+    }
+
+    #send-text {
+        font-size: 32px;
+    }
+
+    img {
+        height: 160px;
+        width: 160px;
+    }
+
+    #safety-text {
+        font-size: 36px;
+        top: 50px;
+    }
+
+    .allow-block {
+        height: 360px;
+    }
+}
