@@ -142,6 +142,12 @@ body {
     opacity: 1;
 }
 
+.modal-title {
+    font-family: sans-serif !important;
+    font-weight: bold;
+}
+
+
 @media (max-width: 1300px) {
 
     #header-text {
